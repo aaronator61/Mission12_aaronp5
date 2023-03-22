@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+// Our JSON information with our schools
 const schools = [
             {"tid": 159, "cid": 0, "did": 0, "school": "Boston College", "name": "Eagles", "abbrev": "BC", "pop": 161, "city": "Chestnut Hill", "state": "MA", "latitude": 42.330, "longitude": -71.166},
             {"tid": 105, "cid": 0, "did": 0, "school": "Clemson", "name": "Tigers", "abbrev": "CLEM", "pop": 215, "city": "Clemson", "state": "SC", "latitude": 34.678, "longitude": -82.839},
@@ -324,6 +325,7 @@ const schools = [
             {"tid": 287, "cid": 19, "did": 39, "school": "Houston Baptist", "name": "Huskies", "abbrev": "HBU", "pop": 33, "city": "Greater Sharpstown", "state": "TX", "latitude": 29.694 , "longitude": -95.515}  
 ];
 
+// Creating our class that will take the info from our JSON and display it
 class Escuela extends React.Component < {school: string, name: string, city: string, state: string} > {
   render() {
     const oneSchool = this.props;
@@ -344,6 +346,7 @@ class Escuela extends React.Component < {school: string, name: string, city: str
   }
 }
 
+//Creating a small header at the top to explain the web page
 function Welcome() {
   const css = `
   .main {
